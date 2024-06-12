@@ -100,15 +100,15 @@ plt.figure(figsize=(8,4))
 plt.grid(zorder=0)
 
 # Plot bars
-plt.bar(sorted_results.keys(), sorted_aws.values(), color='#e63946', width=barWidth, label='AWS', zorder=3)
-plt.bar(r2, sorted_azure.values(), color='#07658e', width=barWidth, label='Azure', zorder=3)
-plt.bar(r1, sorted_google.values(), color='#25a244', width=barWidth, label='GCP', zorder=3)
+plt.bar(sorted_results.keys(), sorted_aws.values(), color='#E66872', width=barWidth, label='AWS', zorder=3)
+plt.bar(r2, sorted_azure.values(), color='#4C8DA9', width=barWidth, label='Azure', zorder=3)
+plt.bar(r1, sorted_google.values(), color='#4BA663', width=barWidth, label='GCP', zorder=3)
 
 # Rotate dates for better readability
 plt.xticks(rotation=70)
 
 # Adding title and labels
-plt.title('Downloaded Cryptojacking Malwares per Country')
+# plt.title('Downloaded Cryptojacking Malwares per Country')
 plt.xlabel('Country')
 plt.ylabel('Number of Cryptojacking Malwares')
 plt.legend(ncol=3)
